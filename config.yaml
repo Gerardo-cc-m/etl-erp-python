@@ -1,1 +1,15 @@
+# Configuration file for ETL process - Sales Data
 
+paths:
+  raw_data: "data_raw/"
+  processed_data: "data_processed/"
+
+files:
+  sales_data: "sales_data_raw.csv"
+
+output:
+  sales_processed: "sales_data_processed.csv"
+
+etl_parameters:
+  date_format: "%Y-%m-%d"
+  currency: "USD"
