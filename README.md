@@ -1,4 +1,6 @@
-# ERP Sales ETL Pipeline (Python)
+# ERP Sales ETL Pipeline (Python)   
+This project is part of my Data & Business Intelligence portfolio:
+https://github.com/Gerardo-cc-m/portfolio_GerardoCasasCordero
 
 ## 📌 Project Overview
 This project simulates a real-world ETL process used to extract commercial sales data from an ERP system, transform and enrich it using business rules, and load it into a structured repository ready for reporting and Business Intelligence analysis.
