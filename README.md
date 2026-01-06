@@ -8,76 +8,67 @@ https://github.com/Gerardo-cc-m/portfolio_GerardoCasasCordero
 ## 📌 Project Overview
 
 This project simulates a real-world ETL process used to extract commercial sales
-data from an ERP system (SAP), transform and enrich it using business rules,
-and load it into a structured repository ready for reporting and
-Business Intelligence analysis.
+data from an ERP system, transform and enrich it using business rules, and load
+it into a structured repository ready for reporting and Business Intelligence
+analysis.
 
-The workflow reflects production scenarios where source files contain
-non-standard headers, custom formats, and require data cleansing,
-homologation, and aggregation before being consumed by analytics tools.
+The datasets included in this repository are fictitious and were created to
+replicate the structure, complexity, and logic of real ERP exports used in
+production environments.
 
 ---
 
 ## 🔄 ETL Workflow
 
 ### Extract
-- Read raw ERP sales files exported from SAP
-- Handle non-standard headers and custom file structures
-- Manage encoding and delimiter variations
+- Read ERP-like sales files with custom formats and headers
+- Handle non-standard delimiters and encoding
+- Skip non-data rows and normalize structure
 
 ### Transform
-- Standardize and clean column names
-- Parse and normalize order dates
-- Convert quantities and sales values to proper data types
-- Apply business rules (brand logic, country-specific conditions)
-- Harmonize data using master datasets (products, importers)
-- Convert currency values
+- Standardize column names
+- Parse and normalize dates
+- Convert quantities and sales values to numeric types
+- Apply business rules and derive time dimensions
 - Aggregate data at monthly level
 
 ### Load
-- Store consolidated datasets in Excel format
-- Output data ready for consumption in Power BI and Excel
+- Store processed data in a structured repository
+- Output datasets ready for Power BI, Excel, or further analytics
 
 ---
 
 ## 🧰 Technologies Used
 - Python (pandas)
 - YAML for configuration management
-- Excel as processed data output
+- CSV / TXT and Excel data sources
 - Git & GitHub
 
 ---
 
 ## 📁 Project Structure
 
-etl-erp-python/   
-│   
-├── data/   
-│ ├── raw/ # Raw ERP extracts (not included)   
-│ └── processed/ # Processed fictitious datasets   
-│   
-├── src/   
-│ └── generar_base_pedidos.py   
-│   
-├── config.yaml   
-└── README.md   
-
+etl-erp-python/  
+│── data_raw/  
+│ └── sales_data_raw.csv # Fictitious ERP-like input data  
+│── data_processed/  
+│ └── sales_data_processed.xlsx # Fictitious processed output  
+│── src/  
+│ └── etl_pipeline.py  
+│── config.yaml  
+│── README.md  
 
 ---
 
 ## ⚠️ Data Disclaimer
 
-All datasets included in this repository are fictitious and were created
-exclusively for demonstration and portfolio purposes.
-
-Real production data extracted from SAP is not included due to
-confidentiality constraints.
+All data included in this repository is fictitious and intended solely for
+demonstration and portfolio purposes. No real commercial or ERP data is exposed.
 
 ---
 
 ## 🎯 Purpose
 
-This repository is intended to demonstrate:
-- Practical ETL development in Python
-- Handling of real-world ERP data complexity
-- Data preparation for Business Intelligence and KPI reporting
+This repository demonstrates practical ETL development using Python, focusing
+on real-world data challenges and preparation of analytics-ready datasets for
+Business Intelligence reporting.
