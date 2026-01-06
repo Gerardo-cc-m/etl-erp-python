@@ -55,6 +55,7 @@ etl-erp-python/
 │ └── sales_data_processed.xlsx # Fictitious processed output  
 │── src/  
 │ └── etl_pipeline.py  
+│ └── etl_pipeline_Extract_info.py  
 │── config.yaml  
 │── README.md  
 
