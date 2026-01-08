@@ -53,8 +53,8 @@ etl-erp-python/
 │ └── sales_data_raw.csv # Fictitious ERP-like input data  
 │── data_processed/  
 │ └── sales_data_processed.xlsx # Fictitious processed output  
-│── Automated_Reporting/
-│ └── send_email.py 
+│── Automated_Reporting/  
+│ └── send_email.py  
 │── src/  
 │ └── etl_pipeline.py  
 │ └── etl_pipeline_Extract_info.py  
@@ -67,11 +67,3 @@ etl-erp-python/
 
 All data included in this repository is fictitious and intended solely for
 demonstration and portfolio purposes. No real commercial or ERP data is exposed.
-
----
-
-## 🎯 Purpose
-
-This repository demonstrates practical ETL development using Python, focusing
-on real-world data challenges and preparation of analytics-ready datasets for
-Business Intelligence reporting.
