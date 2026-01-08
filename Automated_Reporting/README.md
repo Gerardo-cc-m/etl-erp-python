@@ -23,4 +23,4 @@ All data shown in this project is fictitious or anonymized. The original
 implementation used confidential commercial data.
 
 ## Preview
-![Email Preview](email_preview/email_body_example.png)
+![Email Preview](email_preview/email_preview.png)
