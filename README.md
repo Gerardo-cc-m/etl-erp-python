@@ -53,6 +53,8 @@ etl-erp-python/
 │ └── sales_data_raw.csv # Fictitious ERP-like input data  
 │── data_processed/  
 │ └── sales_data_processed.xlsx # Fictitious processed output  
+│── Automated_Reporting/
+│ └── send_email.py 
 │── src/  
 │ └── etl_pipeline.py  
 │ └── etl_pipeline_Extract_info.py  
