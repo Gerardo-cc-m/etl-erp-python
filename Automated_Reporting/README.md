@@ -19,7 +19,7 @@ and automatically deliver them via email to business stakeholders.
 - Outlook automation (win32com)
 
 ## Notes
-All data shown in this project is fictitious or anonymized. The original
+All data shown in this project is fictitious. The original
 implementation used confidential commercial data.
 
 ## Preview
